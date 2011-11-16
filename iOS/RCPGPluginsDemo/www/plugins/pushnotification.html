@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Push Notification Example</title>
+        
+        <script type="text/javascript" charset="utf-8" src="../js/phonegap-1.2.0.js"></script>
+        <script type="text/javascript" charset="utf-8" src="../js/pushnotification.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            
+            // Wait for PhoneGap to load
+            //
+            document.addEventListener("deviceready", onDeviceReady, false);
+            
+            // PhoneGap is ready
+            //
+            function onDeviceReady() {
+                 pushnotification.registerForNotifications(onNotification, onError);  
+            }
+            
+            function onNotification(info) {
+                alert(info['alert']);
+            }
+            
+            function onError(error) {
+                alert('code: '    + error.code    + '\n' +
+                      'message: ' + error.message + '\n');
+                
+            }
+            
+            </script>
+    </head>
+    <body>
+    </body>
+</html>

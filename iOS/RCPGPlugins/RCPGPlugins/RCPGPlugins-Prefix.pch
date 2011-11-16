@@ -1,0 +1,6 @@
+//
+// Prefix header for all source files of the 'RCPGPlugins' target in the 'RCPGPlugins' project
+//
+
+#ifdef __OBJC__
+#endif
