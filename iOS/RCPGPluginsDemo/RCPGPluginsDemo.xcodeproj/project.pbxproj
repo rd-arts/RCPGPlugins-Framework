@@ -42,7 +42,7 @@
 		BE1BF8931473C5B7005F0495 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		BE1BF8941473C5B7005F0495 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BE1BF8951473C5B7005F0495 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		BED7A0111473B63900F40DEE /* RCPGPluginsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RCPGPluginsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BED7A0111473B63900F40DEE /* RCPhoneGapLibPluginExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RCPhoneGapLibPluginExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED7A0151473B63900F40DEE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BED7A0171473B63900F40DEE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BED7A0191473B63900F40DEE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -95,7 +95,7 @@
 		BED7A0121473B63900F40DEE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BED7A0111473B63900F40DEE /* RCPGPluginsDemo.app */,
+				BED7A0111473B63900F40DEE /* RCPhoneGapLibPluginExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,9 +147,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BED7A0101473B63900F40DEE /* RCPGPluginsDemo */ = {
+		BED7A0101473B63900F40DEE /* RCPhoneGapLibPluginExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BED7A02C1473B63900F40DEE /* Build configuration list for PBXNativeTarget "RCPGPluginsDemo" */;
+			buildConfigurationList = BED7A02C1473B63900F40DEE /* Build configuration list for PBXNativeTarget "RCPhoneGapLibPluginExample" */;
 			buildPhases = (
 				BED7A00D1473B63900F40DEE /* Sources */,
 				BED7A00E1473B63900F40DEE /* Frameworks */,
@@ -159,9 +159,9 @@
 			);
 			dependencies = (
 			);
-			name = RCPGPluginsDemo;
+			name = RCPhoneGapLibPluginExample;
 			productName = RCPGPluginsDemo;
-			productReference = BED7A0111473B63900F40DEE /* RCPGPluginsDemo.app */;
+			productReference = BED7A0111473B63900F40DEE /* RCPhoneGapLibPluginExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -184,7 +184,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BED7A0101473B63900F40DEE /* RCPGPluginsDemo */,
+				BED7A0101473B63900F40DEE /* RCPhoneGapLibPluginExample */,
 			);
 		};
 /* End PBXProject section */
@@ -230,7 +230,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gayane Minasyants (EZ5R8UXL3Z)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -239,6 +239,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7CFA3237-4E2C-4376-81FC-C803CA0028F9";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -247,13 +248,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gayane Minasyants (EZ5R8UXL3Z)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7CFA3237-4E2C-4376-81FC-C803CA0028F9";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -306,7 +308,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BED7A02C1473B63900F40DEE /* Build configuration list for PBXNativeTarget "RCPGPluginsDemo" */ = {
+		BED7A02C1473B63900F40DEE /* Build configuration list for PBXNativeTarget "RCPhoneGapLibPluginExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BED7A02D1473B63900F40DEE /* Debug */,

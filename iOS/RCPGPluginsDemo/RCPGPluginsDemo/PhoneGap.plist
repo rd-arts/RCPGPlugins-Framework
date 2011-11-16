@@ -13,9 +13,7 @@
 	<key>EnableViewportScale</key>
 	<false/>
 	<key>ExternalHosts</key>
-	<array>
-		<string>*</string>
-	</array>
+	<array/>
 	<key>Plugins</key>
 	<dict>
 		<key>com.phonegap.accelerometer</key>
@@ -40,12 +38,12 @@
 		<string>PGCapture</string>
 		<key>com.phonegap.notification</key>
 		<string>PGNotification</string>
+		<key>com.rearden.rcpgeventkit</key>
+		<string>RCPGEventKitPlugin</string>
 		<key>com.phonegap.splashscreen</key>
 		<string>PGSplashScreen</string>
-		<key>com.phonegap.rcpgpushnotification</key>
+		<key>com.rearden.rcpgpushnotification</key>
 		<string>RCPGPushNotificationPlugin</string>
-		<key>com.phonegap.rcpgeventkit</key>
-		<string>RCPGEventKitPlugin</string>
 	</dict>
 	<key>ShowSplashScreenSpinner</key>
 	<true/>

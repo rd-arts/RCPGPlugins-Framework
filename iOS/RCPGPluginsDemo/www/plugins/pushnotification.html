@@ -18,7 +18,8 @@
             }
             
             function onNotification(info) {
-                alert(info['alert']);
+                var aps = info['aps'];
+                alert(aps['alert']);
             }
             
             function onError(error) {
