@@ -24,7 +24,7 @@
     //We use this to send data back to the successCallback or failureCallback
     //through PluginResult.   
     self.callbackID = [arguments pop];
-        
+    
     [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeAlert|UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeSound)];
 }
 
@@ -147,13 +147,8 @@
     
 #if !TARGET_IPHONE_SIMULATOR
     
-    NSDictionary* apsInfo = [userInfo objectForKey:@"aps"];
-    
-    PluginResult* pluginResult = [PluginResult resultWithStatus:PGCommandStatus_OK messageAsDictionary:apsInfo];
+    PluginResult* pluginResult = [PluginResult resultWithStatus:PGCommandStatus_OK messageAsDictionary:userInfo];
     [self writeJavascript:[pluginResult toSuccessCallbackString:self.callbackID]];
-
-    // update badge number
-	[UIApplication sharedApplication].applicationIconBadgeNumber = [[apsInfo objectForKey:@"badge"] integerValue];
     
 #endif
 }
